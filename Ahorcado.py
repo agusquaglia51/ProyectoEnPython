@@ -1,5 +1,4 @@
 import random
-
 IMAGENES_AHORCADO = [''' 
 
  +---+
@@ -121,7 +120,7 @@ while True:
         letrasCorrectas = letrasCorrectas + intento
 
         encontradoTodasLasLetras  = True
-        for i in range(len(palabraSecreta)):
+        for i in range(len(palabraSecreta)): 
 
             if palabraSecreta[i] not in letrasCorrectas:
                 encontradoTodasLasLetras = False
@@ -149,3 +148,4 @@ while True:
             palabraSecreta = ObtenerPalabra(palabras)
         else:
             break
+        
